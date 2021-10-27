@@ -3,7 +3,6 @@ Description=powerplan service
 After=multi-user.target
 
 [Service]
-User=root
 Restart=no
 Type=simple
 ExecStart=/usr/bin/powerplan --verbose
