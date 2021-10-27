@@ -1,7 +1,7 @@
 import sys
 from pathlib import Path
 
-import shell
+from . import shell
 
 VERBOSE = '--verbose' in sys.argv
 

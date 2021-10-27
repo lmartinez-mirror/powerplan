@@ -3,11 +3,11 @@ import os
 import configparser
 from time import time, sleep
 
-import powersupply
-import cpu
-from cpu import CPU
-from shell import is_root
-from log import log_error, log_warning, log_info
+from . import powersupply
+from . import cpu
+from .cpu import CPU
+from .shell import is_root
+from .log import log_error, log_warning, log_info
 
 CONFIG_PATH = '/etc/powerplan.conf'
 

@@ -5,10 +5,10 @@ from datetime import datetime
 
 import psutil
 
-import cpu
-import powersupply
-from cpu import CPU, RAPL
-from __init__ import __version__
+from . import cpu
+from . import powersupply
+from .cpu import CPU, RAPL
+from .__init__ import __version__
 
 # Variable string, None's will get filtered out
 SYSTEM_INFO = ('\n'+' '*4).join(filter(None, (

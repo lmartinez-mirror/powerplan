@@ -1,7 +1,7 @@
 from glob import glob
 
-import shell
-import config
+from . import shell
+from . import config
 
 
 class ProcessReader:

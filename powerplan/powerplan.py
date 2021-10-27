@@ -5,12 +5,12 @@ from argparse import ArgumentParser, SUPPRESS
 
 import psutil
 
-import log
-import shell
-import status
-import process
-import powersupply
-from config import read_profiles
+from . import log
+from . import shell
+from . import status
+from . import process
+from . import powersupply
+from .config import read_profiles
 
 argparser = ArgumentParser(description='Automatic CPU power configuration control.')
 argparser.add_argument('-d', '--debug', action='store_true', help=SUPPRESS)

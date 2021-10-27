@@ -5,8 +5,8 @@ from pathlib import Path
 
 import psutil
 
-import log
-from shell import shell, is_root, read, path_is_writable
+from . import log
+from .shell import shell, is_root, read, path_is_writable
 
 '''
 File structure:

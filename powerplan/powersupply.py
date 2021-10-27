@@ -4,8 +4,8 @@ from pathlib import Path
 from collections import deque
 from abc import ABC, abstractmethod
 
-import log
-from shell import read, shell
+from . import log
+from .shell import read, shell
 
 
 class History(deque):
